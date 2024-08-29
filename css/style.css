@@ -1,0 +1,137 @@
+/* ini css */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: peru;
+
+}
+
+@media screen and (max-width: 600px){
+    .header-wrapper {
+        flex-direction: column;
+    }
+     .nav-container {
+        width: 100%;
+        flex-direction: column;
+     }
+     .logo-icon {
+        margin-bottom: 20px;
+     }
+     .profile-container {
+        flex-direction: column;
+     }
+     .message-us-container {
+        flex-direction: column;
+     }
+     
+}
+
+.logo-icon {
+    height: 45px;
+    width: 45px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-item {
+    border: 1px solid;
+    color: brown;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 8%;
+    background-color: cornsilk;
+    text-align: center;
+}
+
+.img-slideshow {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#our-team-profile {
+    background-color: bisque;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-profile {
+    height: 150px;
+    text-align: -webkit-center;
+}
+
+.team-profile-img {
+    height: 100px;
+    width: 100px;
+    background-image: url(https://picsum.photos/1000/200?grayscale);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.message-us-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.table-achivement {
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    width: 700px;
+    text-align: center;
+    border: 2px solid;
+    border-color: whitesmoke;
+    border-collapse: collapse;
+}
+
+ th {
+    background-color: whitesmoke;
+ }
+ 
+
+
+ .column {
+    display: flex;
+ }
+
+ .labels {
+    width: 100px;
+ }
+
+ .input {
+    width: 200px;
+    background-color: aquamarine;
+ }
+
+ #submit {
+    background-color: red;
+    width: 310px;
+ }
+
+ fieldset {
+    width: 300px;
+    height: 200px;
+    background-color: aliceblue;
+ }
+ 
+.footer {
+    text-align: end;
+    background-color: chocolate;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html >
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> My Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        
+        <nav class="header-wrapper">
+            <header>
+                <div class="logo-icon"></div>
+            </header>
+
+            <section class="nav-container">
+                <a href="#home-us" class="nav-item">Home</a>
+                <a href="#our-team-profile" class="nav-item">Our Profile</a>
+                <a href="#our-achivement" class="nav-item">Achivement</a>
+                <a href="#message-us" class="nav-item">Message Us</a>
+            </section>
+        </nav>
+
+        <hr>
+
+        <main>
+            <article id="home-us">
+                <header>
+                    <h1 id="welcome">Welcome to Our Website !!!</h1>
+                </header>
+                <p>Good morning/afternood/night guyss, hope u can enjoy with our content</p>
+                <div>
+                    <img
+                    class="img-slideshow"
+                    src="a.jpg"
+                    />
+                    <img
+                    class="img-slideshow"
+                    src="b.jpg"
+                    />
+                    
+
+                    <button onclick="plusDivs(-1)">Previous</button>
+                    <button onclick="plusDivs(1)">Next</button>
+                </div>
+            </article>
+
+            <hr>
+
+            <section id="our-team-profile">
+                <header> 
+                    <h1>Our Team Profile</h1>
+                </header>
+                <section class="profile-container">
+                    <div class="team-profile">
+                        <div class="team-profile-img"> </div>
+                        <h3> UI & UX Design </h3>
+                    </div>
+                    <div class="team-profile">
+                        <div class="team-profile-img"> </div>
+                        <h3> Frontend </h3>
+                    </div>
+                    <div class="team-profile">
+                        <div class="team-profile-img"> </div>
+                        <h3> Backend & Database </h3>
+                    </div>
+                </section>
+            </section>
+
+            <hr>
+
+            <section id="our-achivement">
+                <header>
+                    <h1>Our Achivements</h1>
+                </header>
+                <div class="table-achivement">
+                    <table>
+                        <caption><b>Here is some example of our student's Achivement</b></caption>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Competition level</th>
+                            <th>Achivement</th>
+                        </tr>
+                        <tr>
+                            <td>Inod</td>
+                            <td>East Java</td>
+                            <td>South-east Asia</td>
+                            <td>Gold Medal SE</td>
+                        </tr>
+                        <tr>
+                            <td>Wawan</td>
+                            <td>Central Kalimantan</td>
+                            <td>International</td>
+                            <td>Silver Medal Web-Development Competition</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Common,we are waiting for u guyss!! </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="message-us">
+                <header>
+                    <h1> Message Us in here!!</h1>
+                </header>
+                <section class="message-us-container">
+                    <div>
+                        
+                        <form id="the-form" name="the-form" method="post" onsubmit="return validateForm()">
+                            <div class="column">
+                                <label class="labels">
+                                    Name:
+                                </label>
+                                <input class="input" type="text" id="name-input" name="fullname"/>
+                            </div>
+                            <div class="column">
+                                <label class="labels">
+                                    Birth Date:
+                                </label>
+                                <input class="input" type="date" id="birhtdate" name="birthdate"/>
+                            </div>
+                            <div class="column" id="gender-select">
+                                <label class="labels" id="gender-label">
+                                    Gender:
+                                </label>
+                                <input type="radio" id="male" name="gen-select1" value="male"/>
+                                <label for="male" id="male-label">Male</label>
+                                <input type="radio" id="fem" name="gen-select1" value="female"/>
+                                <label for="fem" id="fem-label">Female</label>
+                            </div>
+                            <div class="column">
+                                <label class="labels">
+                                    Message:
+                                </label>
+                                <input class="input" type="text" id="message" name="message-input" placeholder="Write here!!"/>
+                            </div>
+                            <div class="column">
+                                <input  type="button" value="submit" id="submit" onclick="return validateForm()">
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend><b>Result</b></legend>
+                            <p>Name: <span id="sender-name"></span></p>
+                            <p>Date of birth: <span id="sender-birth-date"></span></p>
+                            <p>Gender: <span id="sender-gender"></span></p>
+                            <p>Messages: <span id="sender-messages"></span></p>
+                        </fieldset>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer class="footer">
+            <p><b>created by Doni Irawan</b></p>
+        </footer>
+        <hr>
+        <script src="js\script.js"></script>
+    </body>
+
+</html>
